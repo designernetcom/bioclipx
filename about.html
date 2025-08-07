@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- PAGE TITLE HERE -->
+    <title>About Us</title>
+    <!-- META -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.html" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- FONTAWESOME STYLE SHEET -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/fontawesome/css/font-awesome.min.css"
+    />
+    <!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/bootstrap-select.min.css"
+    />
+    <!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css" />
+    <!-- LOADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/loader.min.css" />
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- FLATICON STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/flaticon.min.css" />
+    <!-- THEME COLOR CHANGE STYLE SHEET -->
+    <link
+      rel="stylesheet"
+      class="skin"
+      type="text/css"
+      href="css/skin/skin-1.css"
+    />
+    <!-- SIDE SWITCHER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/switcher.css" />
+    <!-- REVOLUTION SLIDER CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/revolution/revolution/css/settings.css"
+    />
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/revolution/revolution/css/navigation.css"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="page-wraper">
+      <!-- HEADER START -->
+    <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menu-btn {
+    display: none;
+    font-size: 28px;
+    background: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .menu-btn {
+      display: block;
+    }
+
+    #menu-toggle:checked ~ .overlay {
+      display: block;
+    }
+
+    #menu-toggle:checked ~ .nav {
+      display: flex;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+
+    .nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 175px;
+      right: 20px;
+      width: 260px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .nav a {
+      text-decoration: none;
+      padding: 10px 0;
+      color: #000;
+      border-bottom: 1px solid #eee;
+    }
+
+    .close-btn {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: right;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .dropdown-menu {
+      display: none;
+      flex-direction: column;
+    }
+
+    .dropdown:focus-within .dropdown-menu {
+      display: flex;
+    }
+
+    .dropdown > a::after {
+      content: " ▾";
+    }
+
+    .dropdown a {
+      padding-left: 10px;
+    }
+  }
+</style>
+
+<header class="site-header">
+  <div class="container header-container">
+    <!-- Logo -->
+    <div class="logo">
+  <a href="index.html">
+    <img src="./logo.png" alt="Bioclix Logo">
+  </a>
+</div>
+    <!-- Menu Toggle Button -->
+    <input type="checkbox" id="menu-toggle" hidden>
+    <label for="menu-toggle" class="menu-btn">☰</label>
+
+    <!-- Overlay to close menu -->
+    <label for="menu-toggle" class="overlay"></label>
+
+    <!-- Nav Menu -->
+    <nav class="nav">
+      <!-- <label for="menu-toggle" class="close-btn">.</label>  -->
+
+      <a href="./home.html">Home</a>
+      <a href="./about.html">About Us</a>
+
+      <div class="dropdown">
+        <a href="#">Our Products▾</a>
+        <div class="">
+         <li class="">
+  
+  <div class="dropdown-menu">
+    <div class="dropdown-column">
+      <a href="bio-eggmin.html">Bio-Eggmin</a>
+      <a href="bio-mitraz.html">Bio-Mitraz</a>
+      <a href="calcitron.html">Calcitron Advance</a>
+      <a href="gut-o-clix.html">Gut-O-Clix</a>
+      <a href="toxyclix-plus.html">Toxyclix-Plus</a>
+      <a href="biorid-pfs.html">Biorid-PFS</a>
+      <a href="bio-vital.html">Bio-Vital</a>
+    </div>
+    <div class="dropdown-column">
+      <a href="bio-zigtox.html">Bio-Zigtox</a>
+      <a href="bio-vit-e.html">Bio VIT E</a>
+      <a href="bio-tymogard.html">Bio Tymogard</a>
+      <a href="bio-vit-a.html">Bio VIT A</a>
+      <a href="bio-tylon-10.html">Bio TYLON 10</a>
+      <a href="bio-pro-up.html">BIO Pro UP</a>
+      <a href="bio-fe-puls.html">Bio Fe Puls</a>
+    </div>
+  </div>
+</li>
+
+<style>
+/* Prevent bullet on list item */
+.dropdown {
+  position: relative;
+  list-style: none;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  width: 500px;
+  padding: 20px;
+  display: none;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dropdown-column {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-column a {
+  padding: 8px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown-column a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Desktop hover */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+}
+
+/* Mobile click */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    padding: 10px 0;
+    flex-direction: column;
+  }
+
+  .dropdown-column {
+    width: 100%;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: flex;
+  }
+}
+</style>
+
+<script>
+function toggleDropdown(e) {
+  e.preventDefault();
+  // Close other dropdowns
+  document.querySelectorAll('.dropdown').forEach(el => {
+    if (el !== e.target.parentElement) {
+      el.classList.remove('active');
+    }
+  });
+  // Toggle current
+  e.target.parentElement.classList.toggle('active');
+}
+</script>
+        </div>
+      </div>
+
+      <a href="./contact.html">Contact Us</a>
+    </nav>
+  </div>
+</header>
+      <!-- HEADER END -->
+
+      <!-- CONTENT START -->
+      <div class="page-content">
+        <!-- INNER PAGE BANNER -->
+        <div
+          class="wt-bnr-inr overlay-wraper bg-center"
+          style="background-image: url(images/banner/about-bg.jpg)"
+        >
+          <div class="overlay-main site-bg-secondry opacity-09"></div>
+          <div class="container">
+            <div class="wt-bnr-inr-entry">
+              <div class="banner-title-outer">
+                <div class="banner-title-name">
+                  <h2 class="site-text-primary" style="color:#ffffff">About Us</h2>
+                </div>
+              </div>
+              <!-- BREADCRUMB ROW -->
+
+              <div>
+                <ul class="wt-breadcrumb breadcrumb-style-2">
+                  <li><a href="javascript:void(0);">Home</a></li>
+                  <li style="color:#1A70B8;">About</li>
+                </ul>
+              </div>
+
+              <!-- BREADCRUMB ROW END -->
+            </div>
+          </div>
+        </div>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- ABOUT SECTION START -->
+        <div class="section-full welcome-section-outer">
+          <div class="welcome-section-top bg-white p-t80 p-b50">
+            <div class="container">
+              <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 col-md-12 m-b30">
+                  <div class="welcom-to-section">
+                    <!-- TITLE START-->
+                    <div class="left wt-small-separator-outer">
+                      <div class="wt-small-separator site-text-primary">
+                        <div class="sep-leaf-left"></div>
+                        <div style="color:#1A70B8;">
+                          Welcome to Bioclix Chemicals & Pharmaceuticals
+                        </div>
+                         <div class="sep-leaf-right" style="background-color: #1A70B8;"></div> 
+                      </div>
+                    </div>
+                    <p align="justify">
+                      <b>Bioclix Chemicals & Pharmaceuticals</b> is the
+                      innovation-driven animal nutrition and health care company
+                      in Gujrat (India). We develop innovative solutions for
+                      optimum productivity and well being of Poultry animals. We
+                      are a team of poultry medicines experts, nutritionists,
+                      technical consultants, researchers and functional staff. A
+                      balanced mix of experienced and young minds gives us the
+                      business edge for today, at the same time keeping us
+                      geared up for tomorrow’s challenges.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12 m-b30">
+                  <div class="img-colarge2">
+                    <div class="colarge-2 slide-right">
+                      <img src="images/colarge/about1.jpg" alt="" />
+                    </div>
+                    <div class="colarge-2-1">
+                      <img src="images/colarge/about2.jpg" alt="" />
+                    </div>
+                    <div class="since-year-outer2">
+                      <div class="since-year2">
+                        <span>Since</span><strong  style="color: #1A70B8;">2011</strong>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- TITLE START-->
+                <div
+                  class="section-head center wt-small-separator-outer text-center mt-3"
+                >
+                  <div class="wt-small-separator site-text-primary">
+                    <div class="sep-leaf-left"  style="background-color: #1A70B8;"></div>
+                    <div style="color: #1A70B8;">Smart Solutions for Poultry</div>
+                    <div class="sep-leaf-right"  style="background-color: #1A70B8;"></div>
+                  </div>
+                </div>
+                <!-- TITLE END-->
+                <p align="justify p-2">
+                  The quality of animal feed is typically judged based on its
+                  nutritional value and overall appearance. Maintaining quality
+                  and nutritional value in feed cannot be achieved solely
+                  through sound harvest and storage practices, however.
+                  Producers must also consider solutions specially designed to
+                  protect feed value.
+                </p>
+                <p align="justify p-2">
+                  Adding <b>Bioclix Chemicals</b> Feed Quality solutions to your
+                  operation can help prolong feed shelf-life, reduce production
+                  costs and improve animal performance.
+                </p>
+                <p align="justify p-2">
+                  Bioclix Chemicals strongly believes that to remain effective
+                  in an increasingly competitive market, it must stay at the
+                  forefront of developments and offer products and services,
+                  which consumers trust and believe to be value for money.
+                </p>
+                <p align="justify p-2">
+                  Despite its aim to change and adapt for the future,
+                  <b>Bioclix Chemicals</b> will never change the belief that
+                  employees are its most valuable assets.
+                  <b>Bioclix Chemicals</b> is proud to have to its credit
+                  several awards from different institutions on management,
+                  finance and other areas consecutively for past several years.
+                </p>
+                <p align="justify p-2">
+                  <b>Bioclix Chemicals</b> grew up with a strong heritage as a
+                  research based company. As <b>Bioclix Chemicals</b> move into
+                  the 21st century, the future is becoming increasingly research
+                  driven to meet the needs of healthcare of livestock industry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 border-right">
+              <!-- TITLE START-->
+              <div
+                class="section-head center wt-small-separator-outer text-center mt-3"
+              >
+                <div class="wt-small-separator site-text-primary">
+                  <div class="sep-leaf-left"></div>
+                  <div style="color: #1A70B8;">Vision</div>
+                  <div class="sep-leaf-right"></div>
+                </div>
+              </div>
+              <!-- TITLE END-->
+              <p align="justify">
+                To be recognized as a complete solution provider offering
+                affordable, innovative & research based solutions for Healthcare
+                & Nutrition to the Poultry Farming Fraternity Globally.
+              </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <!-- TITLE START-->
+              <div
+                class="section-head center wt-small-separator-outer text-center mt-3"
+              >
+                <div class="wt-small-separator site-text-primary">
+                  <div class="sep-leaf-left"></div>
+                  <div style="color: #1A70B8;">Core Values</div>
+                  <div class="sep-leaf-right"></div>
+                </div>
+              </div>
+              <!-- TITLE END-->
+
+              <p>
+                Customer focus <i class="fa fa-exchange"> </i> Only reason to be
+                in business
+              </p>
+
+              <p>
+                Performance Focus <i class="fa fa-exchange"> </i> Providing
+                complete solutions
+              </p>
+
+              <p>
+                Entrepreneurial Drive <i class="fa fa-exchange"> </i> Ownership
+                driven
+              </p>
+
+              <p>
+                Teamwork <i class="fa fa-exchange"> </i> Together in one
+                direction
+              </p>
+
+              <p>
+                Trust & Integrity <i class="fa fa-exchange"> </i> Respect for
+                all
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ABOUT SECTION  SECTION END -->
+        <!-- OUR TEAM START -->
+        <!-- <div class="section-full pt-5 pb-5 bg-white team-bg-section-outer bg-no-repeat bg-center" style="background-image:url(images/background/bg-map.png)">
+                <div class="container">
+                    <div class="section-content">
+                    
+                     
+                    <div class="section-head center wt-small-separator-outer text-center">
+                        <div class="wt-small-separator site-text-primary">
+                            <div  class="sep-leaf-left"></div>
+                            <div>Our Experts</div>
+                            <div  class="sep-leaf-right"></div>
+                        </div>
+                        <h2>We will serve you with the best of our capacity by expert team</h2>
+                    </div>
+                     
+                               
+                    <div class="section-content">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                                <div class="wt-team-1">
+                                    
+                                    <div class="wt-media">
+                                        <img src="images/team/pic1.jpg" alt="">
+                                        <div class="team-social-center">
+                                            <ul class="team-social-bar">
+                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                            
+                                        </div>                                              
+                                    </div>                                   
+
+                                    <div class="wt-info p-a30  p-b0">
+                                        <div class="team-detail  text-center">
+                                            <h3 class="m-t0 team-name"><a href="team-single.html" class=" site-text-secondry">Malcolm Franzcrip</a></h3>
+                                            <span class="title-style-2 team-position site-text-primary">Contractor</span>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                                <div class="wt-team-1">
+                                    
+                                    <div class="wt-media">
+                                        <img src="images/team/pic2.jpg" alt="">
+                                        <div class="team-social-center">
+                                            <ul class="team-social-bar">
+                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                            
+                                        </div>
+                                    </div>                                   
+
+                                    <div class="wt-info p-a30  p-b0">
+                                        <div class="team-detail  text-center">
+                                            <h3 class="m-t0 team-name"><a href="team-single.html" class=" site-text-secondry">Froster Collings</a></h3>
+                                            <span class="title-style-2 team-position site-text-primary">Contractor</span>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12 m-b30">
+                                <div class="wt-team-1">
+                                    
+                                    <div class="wt-media">
+                                        <img src="images/team/pic3.jpg" alt="">
+                                        <div class="team-social-center">
+                                            <ul class="team-social-bar">
+                                                <li><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a href="javascript:void(0);"><i class="fa fa-instagram"></i></a></li>
+                                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                                            </ul>
+                                            
+                                        </div>
+                                    </div>                                   
+
+                                    <div class="wt-info p-a30 p-b0">
+                                        <div class="team-detail  text-center">
+                                            <h3 class="m-t0 team-name"><a href="team-single.html" class=" site-text-secondry">Melena Marshall</a></h3>
+                                            <span class="title-style-2 team-position site-text-primary">Contractor</span>
+                                        </div>
+                                    </div>
+                            
+                                </div>
+                            </div>                                                        
+                            
+                        </div>
+                    </div>      
+                        
+                    </div>
+                </div>
+            </div> -->
+        <!-- OUR TEAM SECTION END -->
+
+        <!-- VIDEO SECTION START -->
+
+        <!-- <div class="section-full video2-counter-section p-t80 p-b40  overlay-wraper bg-cover bg-no-repeat" style="background-image:url(images/background/about-bg.jpg);">
+				<div class="overlay-main site-bg-secondry opacity-09"></div>                                       
+
+                        <div class="container">
+                             
+
+                            <div class="counter2-section-outer-top">
+                                <div class="counter-outer">                            
+                                    
+                                    <div class="row justify-content-center">
+                                            
+                                        <div class="col-lg-3 col-md-6 m-b30 ">
+                                            <div class="wt-icon-box-wraper center">
+                                                <h2 class="counter site-text-primary">35</h2>
+                                                <span class="site-text-white title-style-2">Projects Completed</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-lg-3 col-md-6 m-b30">
+                                            <div class="wt-icon-box-wraper center">
+                                                <h2 class="counter site-text-primary">1435</h2>
+                                                <span class="site-text-white title-style-2">Work Employed</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-lg-3 col-md-6 m-b30">
+                                            <div class="wt-icon-box-wraper center">
+                                                <h2 class="counter site-text-primary" >750</h2>
+                                                <span class="site-text-white title-style-2">Work facilities</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-lg-3 col-md-6 m-b30">
+                                            <div class="wt-icon-box-wraper center">
+                                                <h2 class="counter site-text-primary" >26</h2>
+                                                <span class="site-text-white title-style-2">Winning Awards</span>
+                                            </div>
+                                        </div>                                        
+
+                                    </div>                            
+                                
+                                </div>   
+                            </div>  
+
+                           <div class="counter2-section-outer-bottom">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 col-md-6 m-b30">
+                                    
+                                        <div class="video-section-blockquote">
+                                            <i class="fa fa-quote-left"></i>
+                                            <span class="q-author-detail site-text-white title-style-2">Many of Our SELF registered employees are requested an main preferred temporary staff when all service</span>
+                                            <div class="q-author-name site-text-primary title-style-2">Farnandoz Biki, CEO</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>                            
+                            </div> 
+                                                                                        
+                       </div>
+
+                    </div>  -->
+        <!-- VIDEO SECTION  SECTION END -->
+
+        <!-- CLIENT LOGO SECTION START -->
+        <!-- <div class="section-full bg-gray p-tb50">
+                <div class="container">
+                    <div class="section-content">
+                         
+                                <div class="section-head center wt-small-separator-outer text-center mt-5">
+                                    <div class="wt-small-separator site-text-primary">
+                                        <div class="sep-leaf-left"></div>
+                                        <div>Our Clients</div>
+                                        <div class="sep-leaf-right"></div>
+                                    </div>
+                                </div>
+                             
+                    
+                         
+                        <div class="section-content">
+                             <div class="section-content owl-btn-vertical-center">
+                                <div class="owl-carousel home-client-carousel-2 ">
+                                
+                                    <div class="item">
+                                        <div class="ow-client-logo">
+                                            <div class="client-logo client-logo-media">
+                                            <a href="javascript:void(0);"><img src="images/client-logo/w1.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="ow-client-logo">
+                                            <div class="client-logo client-logo-media">
+                                            <a href="javascript:void(0);"><img src="images/client-logo/w1.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="ow-client-logo">
+                                            <div class="client-logo client-logo-media">
+                                            <a href="javascript:void(0);"><img src="images/client-logo/w1.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="ow-client-logo">
+                                            <div class="client-logo client-logo-media">
+                                            <a href="javascript:void(0);"><img src="images/client-logo/w1.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="ow-client-logo">
+                                            <div class="client-logo client-logo-media">
+                                            <a href="javascript:void(0);"><img src="images/client-logo/w1.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <div class="ow-client-logo">
+                                            <div class="client-logo client-logo-media">
+                                            <a href="javascript:void(0);"><img src="images/client-logo/w1.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    
+                                                                                                          
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        <!-- CLIENT LOGO  SECTION End -->
+      </div>
+      <!-- CONTENT END -->
+
+      <!-- FOOTER START -->
+     <footer class="footer-section">
+  <div class="footer-container">
+    
+    <!-- Left column -->
+    <div class="footer-col logo-col">
+      <img src="./logo.png" alt="Bioclix Logo" class="footer-logo" style="filter: brightness(0) invert(1);" />
+
+      <p style="font-size:16px;">89/2, Takshashila Habitat,<br>
+         Sardar Patel Ring Road,<br>
+         Ahmedabad, Gujarat-382415</p>
+      <p style="font-size:16px;" class="phone">+91-9871863743</p>
+    </div>
+
+    <!-- Useful Links -->
+    <div class="footer-col">
+      <h4 style="color: #ffffff;">Useful Links</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">View Catalog</a></li>
+      </ul>
+    </div>
+
+    <!-- Products Column 1 -->
+    <div class="footer-col">
+      <h4 style="color: #ffffff;">Our Products</h4>
+      <ul>
+        <li><a href="#">Bio-Eggmin</a></li>
+        <li><a href="#">Biorid-PFS</a></li>
+        <li><a href="#">Gut-O-Clix</a></li>
+        <li><a href="#">Bio-Vital</a></li>
+      </ul>
+    </div>
+
+    <!-- Products Column 2 -->
+    <div class="footer-col">
+      <h4 style="color: #ffffff;">Our Products</h4>
+      <ul>
+        <li><a href="#">Bio Tymogard 10%</a></li>
+        <li><a href="#">Bio Tylon 10%</a></li>
+        <li><a href="#">Bio Vit-A</a></li>
+        <li><a href="#">Bio Vit-E</a></li>
+      </ul>
+    </div>
+
+    <!-- Products Column 3 -->
+    <div class="footer-col">
+      <h4 style="color: #ffffff;">Our Products</h4>
+      <ul>
+        <li><a href="#">Bio FE Plus</a></li>
+        <li><a href="#">Bio Pro-UP</a></li>
+        <li><a href="#">EL-VIT X</a></li>
+        <li><a href="#">Bio Zigtop-P</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+      <!-- FOOTER END -->
+
+      <!-- BUTTON TOP START -->
+      <button class="scroltop">
+        <span class="fa fa-angle-up relative" id="btn-vibrate"></span>
+      </button>
+    </div>
+
+    <!-- JAVASCRIPT  FILES ========================================= -->
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <!-- JQUERY.MIN JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- POPPER.MIN JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- BOOTSTRAP.MIN JS -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <!-- Form js -->
+    <script src="js/magnific-popup.min.js"></script>
+    <!-- MAGNIFIC-POPUP JS -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script>
+    <!-- COUNTERUP JS -->
+    <script src="js/waypoints-sticky.min.js"></script>
+    <!-- STICKY HEADER -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- MASONRY  -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- OWL  SLIDER  -->
+    <script src="js/stellar.min.js"></script>
+    <!-- PARALLAX BG IMAGE   -->
+    <script src="js/map.script.js"></script>
+    <script src="js/theia-sticky-sidebar.js"></script>
+    <!-- STICKY SIDEBAR  -->
+    <script src="js/jquery.bootstrap-touchspin.js"></script>
+    <!-- FORM JS -->
+    <script src="js/custom.js"></script>
+    <!-- CUSTOM FUCTIONS  -->
+
+    <script src="js/switcher.js"></script>
+    <!-- SHORTCODE FUCTIONS  -->
+
+    <!-- STYLE SWITCHER  ======= -->
+    <div class="styleswitcher">
+      <div class="styleswitcher-inner">
+        <h6 class="switcher-title">Color Skin</h6>
+        <ul class="color-skins">
+          <li>
+            <a
+              class="theme-skin skin-1"
+              href="contact-1a39b.html?theme=css/skin/skin-1"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- STYLE SWITCHER END ==== -->
+    <!-- <a href="https://wa.me/+919896017485?text=I'm%20interested%20in%20your" target="_blank" id="whatsapp">
+    <i class="icon fa fa-whatsapp"></i>
+</a> -->
+  </body>
+</html>

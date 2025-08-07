@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- PAGE TITLE HERE -->
+    <title>Contact Us</title>
+    <!-- META -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.html" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- FONTAWESOME STYLE SHEET -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/fontawesome/css/font-awesome.min.css"
+    />
+    <!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/bootstrap-select.min.css"
+    />
+    <!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css" />
+    <!-- LOADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/loader.min.css" />
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- FLATICON STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/flaticon.min.css" />
+    <!-- THEME COLOR CHANGE STYLE SHEET -->
+    <link
+      rel="stylesheet"
+      class="skin"
+      type="text/css"
+      href="css/skin/skin-1.css"
+    />
+    <!-- SIDE SWITCHER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/switcher.css" />
+    <!-- REVOLUTION SLIDER CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/revolution/revolution/css/settings.css"
+    />
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/revolution/revolution/css/navigation.css"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="page-wraper">
+      <!-- HEADER START -->
+        <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menu-btn {
+    display: none;
+    font-size: 28px;
+    background: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .menu-btn {
+      display: block;
+    }
+
+    #menu-toggle:checked ~ .overlay {
+      display: block;
+    }
+
+    #menu-toggle:checked ~ .nav {
+      display: flex;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+
+    .nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 175px;
+      right: 20px;
+      width: 260px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .nav a {
+      text-decoration: none;
+      padding: 10px 0;
+      color: #000;
+      border-bottom: 1px solid #eee;
+    }
+
+    .close-btn {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: right;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .dropdown-menu {
+      display: none;
+      flex-direction: column;
+    }
+
+    .dropdown:focus-within .dropdown-menu {
+      display: flex;
+    }
+
+    .dropdown > a::after {
+      content: " ▾";
+    }
+
+    .dropdown a {
+      padding-left: 10px;
+    }
+  }
+</style>
+
+<header class="site-header">
+  <div class="container header-container">
+    <!-- Logo -->
+    <div class="logo">
+  <a href="index.html">
+    <img src="./logo.png" alt="Bioclix Logo">
+  </a>
+</div>
+    <!-- Menu Toggle Button -->
+    <input type="checkbox" id="menu-toggle" hidden>
+    <label for="menu-toggle" class="menu-btn">☰</label>
+
+    <!-- Overlay to close menu -->
+    <label for="menu-toggle" class="overlay"></label>
+
+    <!-- Nav Menu -->
+    <nav class="nav">
+      <!-- <label for="menu-toggle" class="close-btn">.</label>  -->
+
+      <a href="./home.html">Home</a>
+      <a href="./about.html">About Us</a>
+
+      <div class="dropdown">
+        <a href="#">Our Products▾</a>
+        <div class="">
+         <li class="">
+  
+  <div class="dropdown-menu">
+    <div class="dropdown-column">
+      <a href="bio-eggmin.html">Bio-Eggmin</a>
+      <a href="bio-mitraz.html">Bio-Mitraz</a>
+      <a href="calcitron.html">Calcitron Advance</a>
+      <a href="gut-o-clix.html">Gut-O-Clix</a>
+      <a href="toxyclix-plus.html">Toxyclix-Plus</a>
+      <a href="biorid-pfs.html">Biorid-PFS</a>
+      <a href="bio-vital.html">Bio-Vital</a>
+    </div>
+    <div class="dropdown-column">
+      <a href="bio-zigtox.html">Bio-Zigtox</a>
+      <a href="bio-vit-e.html">Bio VIT E</a>
+      <a href="bio-tymogard.html">Bio Tymogard</a>
+      <a href="bio-vit-a.html">Bio VIT A</a>
+      <a href="bio-tylon-10.html">Bio TYLON 10</a>
+      <a href="bio-pro-up.html">BIO Pro UP</a>
+      <a href="bio-fe-puls.html">Bio Fe Puls</a>
+    </div>
+  </div>
+</li>
+
+<style>
+/* Prevent bullet on list item */
+.dropdown {
+  position: relative;
+  list-style: none;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  width: 500px;
+  padding: 20px;
+  display: none;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dropdown-column {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-column a {
+  padding: 8px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown-column a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Desktop hover */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+}
+
+/* Mobile click */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    padding: 10px 0;
+    flex-direction: column;
+  }
+
+  .dropdown-column {
+    width: 100%;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: flex;
+  }
+}
+</style>
+
+<script>
+function toggleDropdown(e) {
+  e.preventDefault();
+  // Close other dropdowns
+  document.querySelectorAll('.dropdown').forEach(el => {
+    if (el !== e.target.parentElement) {
+      el.classList.remove('active');
+    }
+  });
+  // Toggle current
+  e.target.parentElement.classList.toggle('active');
+}
+</script>
+        </div>
+      </div>
+
+      <a href="./contact.html">Contact Us</a>
+    </nav>
+  </div>
+</header>
+      <!-- HEADER END -->
+
+      <!-- CONTENT START -->
+      <div class="page-content">
+        <!-- INNER PAGE BANNER -->
+        <div
+          class="wt-bnr-inr overlay-wraper bg-center"
+          style="background-image: url(images/banner/contact-bg.jpg)"
+        >
+          <div class="overlay-main site-bg-secondry opacity-07"></div>
+          <div class="container">
+            <div class="wt-bnr-inr-entry">
+              <div class="banner-title-outer">
+                <div class="banner-title-name">
+                  <h2 class="site-text-primary"  style="color: white;">Contact Us</h2>
+                </div>
+              </div>
+              <!-- BREADCRUMB ROW -->
+
+              <div>
+                <ul class="wt-breadcrumb breadcrumb-style-2">
+                  <li><a href="javascript:void(0);">Home</a></li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+
+              <!-- BREADCRUMB ROW END -->
+            </div>
+          </div>
+        </div>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- SECTION CONTENTG START -->
+
+        <!-- CONTACT FORM -->
+        <div
+          class="section-full p-t80 p-b50 bg-cover"
+          style="background-image: url(images/background/contact-bg.jpg)"
+        >
+          <div class="section-content">
+            <div class="container">
+              <div class="contact-one">
+                <!-- CONTACT FORM-->
+                <div class="row d-flex justify-content-center flex-wrap">
+                  <div class="col-lg-6 col-md-6 m-b30">
+                    <form id="myForm" action="" method="post" enctype="multipart/form-data">
+                        
+                      <!-- TITLE START -->
+                      <div class="section-head left wt-small-separator-outer">
+                        <div class="wt-small-separator site-text-primary">
+                          <div class="sep-leaf-left"></div>
+                          <div>Contact Form</div>
+                          <div class="sep-leaf-right"></div>
+                        </div>
+                        <h2>Get In Touch</h2>
+                      </div>
+                      <!-- TITLE END -->
+                        <div id="check1"></div>
+                        <div class="row">
+                        <div class="col-md-12">
+                            <div id="check1"></div>
+                        </div><br>
+                        <div class="col-lg-12 col-md-12">
+                          <div class="form-group">
+                            <input
+                              name="name" id="name"
+                              type="text" required class="form-control" placeholder="Name"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12">
+                          <div class="form-group">
+                            <input
+                              name="email" id="email" 
+                              type="text"
+                              class="form-control"
+                              required
+                              placeholder="Email"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12">
+                          <div class="form-group">
+                            <input
+                              name="phone" 
+                              id="phone"
+                              type="text"
+                              class="form-control"
+                              required
+                              placeholder="Phone"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <textarea
+                              name="message" 
+                              id="message"
+                              class="form-control"
+                              rows="8"
+                              placeholder="Message"
+                            ></textarea>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                             <div class="g-recaptcha" data-sitekey="6LeW48khAAAAAMV-3Gmh62KEDHD9aFTFTKnDkzSj"></div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <button
+                            type="submit"
+                            id="btn_submit"
+                            class="site-button site-btn-effect">
+                            Submit Now
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    <script src='https://www.google.com/recaptcha/api.js'></script>
+                  </div>
+
+                  <div class="col-lg-6 col-md-6 m-b30">
+                    <div class="contact-info">
+                      <div class="contact-info-inner">
+                        <!-- TITLE START-->
+                        <div class="section-head left wt-small-separator-outer">
+                          <div class="wt-small-separator site-text-primary">
+                            <div class="sep-leaf-left"></div>
+                            <div>Contact info</div>
+                            <div class="sep-leaf-right"></div>
+                          </div>
+                          <h2>Our Full Info</h2>
+                        </div>
+                        <!-- TITLE END-->
+
+                        <div
+                          class="contact-info-section"
+                          style="
+                            background-image: url(images/background/bg-map2.png);
+                          "
+                        >
+                          <!-- <div class="wt-icon-box-wraper left m-b30">
+                                                        
+                                                        <div class="icon-content">
+                                                            <h3 class="m-t0 site-text-primary">Phone number</h3>
+                                                            <a href="tel:9896014785" class="text-white" target="_blank">+91 9896014785</a>
+                                                        </div>
+                                                    </div> -->
+
+                          <div class="wt-icon-box-wraper left m-b30">
+                            <div class="icon-content">
+                              <h3 class="m-t0 site-text-primary">
+                                Email address
+                              </h3>
+                              <a
+                                href="mailto:bioclixchemicals@gmail.com"
+                                class="text-white"
+                                target="_blank"
+                                >bioclixchemicals@gmail.com</a
+                              >
+                            </div>
+                          </div>
+
+                          <div class="wt-icon-box-wraper left m-b30">
+                            <div class="icon-content">
+                              <h3 class="m-t0 site-text-primary">Address</h3>
+                              <a href="" class="text-white" target="_blank"
+                                >89/2, Takshashila Habitat, Sardar Patel Ring
+                                Road, Ahmedabad, Gujarat-382415</a
+                              >
+                            </div>
+                          </div>
+
+                          <div class="wt-icon-box-wraper left">
+                            <div class="icon-content">
+                              <h3 class="m-t0 site-text-primary">
+                                Opening Hours
+                              </h3>
+                              <ul class="list-unstyled m-b0">
+                                <li>Mon-Sat: 9 am – 6 pm</li>
+                                <li>Sunday: Closed</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GOOGLE MAP -->
+      </div>
+      <!-- CONTENT END -->
+
+      <!-- FOOTER START -->
+       <footer class="footer-section">
+  <div class="footer-container">
+    
+    <!-- Left column -->
+    <div class="footer-col logo-col">
+      <img src="./logo.png" alt="Bioclix Logo" class="footer-logo" style="filter: brightness(0) invert(1);" />
+
+      <p style="font-size:16px;">89/2, Takshashila Habitat,<br>
+         Sardar Patel Ring Road,<br>
+         Ahmedabad, Gujarat-382415</p>
+      <p style="font-size:16px;" class="phone">+91-9871863743</p>
+    </div>
+
+    <!-- Useful Links -->
+    <div class="footer-col">
+      <h4 style="color: #ffffff;">Useful Links</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">View Catalog</a></li>
+      </ul>
+    </div>
+
+    <!-- Products Column 1 -->
+    <div class="footer-col">
+      <h4 style="color: #ffffff;">Our Products</h4>
+      <ul>
+        <li><a href="#">Bio-Eggmin</a></li>
+        <li><a href="#">Biorid-PFS</a></li>
+        <li><a href="#">Gut-O-Clix</a></li>
+        <li><a href="#">Bio-Vital</a></li>
+      </ul>
+    </div>
+
+    <!-- Products Column 2 -->
+    <div class="footer-col">
+      <h4 style="color: #ffffff;">Our Products</h4>
+      <ul>
+        <li><a href="#">Bio Tymogard 10%</a></li>
+        <li><a href="#">Bio Tylon 10%</a></li>
+        <li><a href="#">Bio Vit-A</a></li>
+        <li><a href="#">Bio Vit-E</a></li>
+      </ul>
+    </div>
+
+    <!-- Products Column 3 -->
+    <div class="footer-col">
+      <h4 style="color: #ffffff;">Our Products</h4>
+      <ul>
+        <li><a href="#">Bio FE Plus</a></li>
+        <li><a href="#">Bio Pro-UP</a></li>
+        <li><a href="#">EL-VIT X</a></li>
+        <li><a href="#">Bio Zigtop-P</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+      <!-- FOOTER END -->
+
+      <!-- BUTTON TOP START -->
+      <button class="scroltop">
+        <span class="fa fa-angle-up relative" id="btn-vibrate"></span>
+      </button>
+    </div>
+
+    <!-- JAVASCRIPT  FILES ========================================= -->
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <!-- JQUERY.MIN JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- POPPER.MIN JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- BOOTSTRAP.MIN JS -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <!-- Form js -->
+    <script src="js/magnific-popup.min.js"></script>
+    <!-- MAGNIFIC-POPUP JS -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script>
+    <!-- COUNTERUP JS -->
+    <script src="js/waypoints-sticky.min.js"></script>
+    <!-- STICKY HEADER -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- MASONRY  -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- OWL  SLIDER  -->
+    <script src="js/stellar.min.js"></script>
+    <!-- PARALLAX BG IMAGE   -->
+    <script src="js/map.script.js"></script>
+    <script src="js/theia-sticky-sidebar.js"></script>
+    <!-- STICKY SIDEBAR  -->
+    <script src="js/jquery.bootstrap-touchspin.js"></script>
+    <!-- FORM JS -->
+    <script src="js/custom.js"></script>
+    <!-- CUSTOM FUCTIONS  -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+      
+        $('#myForm').submit(function(e){
+            
+            e.preventDefault();
+            var name = $('#name').val();
+            var email = $('#email').val();
+            //var number = $('#rmPhoneNum').val();
+            var phone = $('#phone').val();
+            var message = $('#message').val();
+            var error = false;
+            var flg=1;
+           // alert(name);alert(email);alert(subject);
+             var name_regex="^[a-zA-Z\\s]*$";
+            var email_regex =/\b(^(\S+@).+((\.com)|(\.net)|(\.edu)|(\.mil)|(\.gov)|(\.org)|(\.info)|(\.in)|(\.biz)|(\.aero)|(\.coop)|(\.museum)|(\.name)|(\.pro)|(\..{2,2}))$)\b/gi;
+           // var mobile_regex=/\d{10}/;
+     if (phone == "") 
+        {
+          $('#check1').html('** Please Enter Your phone **').css( "color", "red");
+          $("#phone").focus();
+          var error = true;
+          return false;
+        }
+       if(!name.match(name_regex) || name == "")
+        {
+          $('#check1').html('** Please Enter your Name **').css( "color", "red");
+          $("#name").focus();
+          var error = true;
+          return false;
+        }
+        if (!email.match(email_regex)|| email == "") 
+        {
+          $('#check1').html('** Please Enter Your Email Id **').css( "color", "red");
+          $("#email").focus();
+          var error = true;
+          return false;
+        }
+         
+        
+       
+        
+         if (message == "") 
+        {
+          $('#check1').html('** Please Enter Your Message **').css( "color", "red");
+          $("#message").focus();
+          var error = true;
+          return false;
+        } 
+        if(error!=true)
+            {
+                $('#btn_submit').attr({'disabled' : 'true', 'value' : 'Sending...' });  
+               var form = $('#myForm')[0];
+                var formData = new FormData(form);
+                $.ajax({
+                    url: "contact_valid.php", 
+                    type: "POST",             
+                    data: formData,
+                    contentType: false,       
+                    cache: false,             
+                    processData:false, 
+                    success: function(data) {
+                    
+                       
+                        if(data=='sent')
+                        {
+                            $('#btn_submit').removeAttr('disabled').attr('value', 'Sent')
+                            $('#check1').html('** Thank You For Contacting Us,We Will Contact You Soon.. **').css( "color", "green");
+                             $("#myForm").get(0).reset();
+                            
+                        }
+                        else
+                        {
+                                $('#btn_submit').removeAttr('disabled').attr('value', 'Retry');
+                            $('#check1').html(data).css("color","red");
+                        }
+                    }
+                });
+                return false;
+            }
+            else
+            {
+                alert("error");
+            }
+        });
+    });
+</script>
+    
+    <!-- STYLE SWITCHER END ==== -->
+
+    <!-- <a href="https://wa.me/+919896017485?text=I'm%20interested%20in%20your" target="_blank" id="whatsapp">
+    <i class="icon fa fa-whatsapp"></i>
+</a> -->
+  </body>
+</html>

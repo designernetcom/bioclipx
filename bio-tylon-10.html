@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- PAGE TITLE HERE -->
+    <title>Bio-Eggmin</title>
+    <!-- META -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <!-- MOBILE SPECIFIC -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- FAVICONS ICON -->
+    <link rel="icon" href="images/favicon.html" type="image/x-icon" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <!-- BOOTSTRAP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- FONTAWESOME STYLE SHEET -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/fontawesome/css/font-awesome.min.css"
+    />
+    <!-- OWL CAROUSEL STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <!-- BOOTSTRAP SLECT BOX STYLE SHEET  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/bootstrap-select.min.css"
+    />
+    <!-- MAGNIFIC POPUP STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css" />
+    <!-- LOADER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/loader.min.css" />
+    <!-- MAIN STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- FLATICON STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/flaticon.min.css" />
+    <!-- THEME COLOR CHANGE STYLE SHEET -->
+    <link
+      rel="stylesheet"
+      class="skin"
+      type="text/css"
+      href="css/skin/skin-1.css"
+    />
+    <!-- SIDE SWITCHER STYLE SHEET -->
+    <link rel="stylesheet" type="text/css" href="css/switcher.css" />
+    <!-- REVOLUTION SLIDER CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/revolution/revolution/css/settings.css"
+    />
+    <!-- REVOLUTION NAVIGATION STYLE -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="plugins/revolution/revolution/css/navigation.css"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;display=swap"
+      rel="stylesheet"
+    />
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="page-wraper">
+      <!-- HEADER START -->
+       <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .menu-btn {
+    display: none;
+    font-size: 28px;
+    background: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+  }
+
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .menu-btn {
+      display: block;
+    }
+
+    #menu-toggle:checked ~ .overlay {
+      display: block;
+    }
+
+    #menu-toggle:checked ~ .nav {
+      display: flex;
+    }
+
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 999;
+    }
+
+    .nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 175px;
+      right: 20px;
+      width: 260px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 1000;
+    }
+
+    .nav a {
+      text-decoration: none;
+      padding: 10px 0;
+      color: #000;
+      border-bottom: 1px solid #eee;
+    }
+
+    .close-btn {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: right;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .dropdown-menu {
+      display: none;
+      flex-direction: column;
+    }
+
+    .dropdown:focus-within .dropdown-menu {
+      display: flex;
+    }
+
+    .dropdown > a::after {
+      content: " ▾";
+    }
+
+    .dropdown a {
+      padding-left: 10px;
+    }
+  }
+</style>
+
+<header class="site-header">
+  <div class="container header-container">
+    <!-- Logo -->
+    <div class="logo">
+  <a href="index.html">
+    <img src="./logo.png" alt="Bioclix Logo">
+  </a>
+</div>
+    <!-- Menu Toggle Button -->
+    <input type="checkbox" id="menu-toggle" hidden>
+    <label for="menu-toggle" class="menu-btn">☰</label>
+
+    <!-- Overlay to close menu -->
+    <label for="menu-toggle" class="overlay"></label>
+
+    <!-- Nav Menu -->
+    <nav class="nav">
+      <!-- <label for="menu-toggle" class="close-btn">.</label>  -->
+
+      <a href="./home.html">Home</a>
+      <a href="./about.html">About Us</a>
+
+      <div class="dropdown">
+        <a href="#">Our Products▾</a>
+        <div class="">
+         <li class="">
+  
+  <div class="dropdown-menu">
+    <div class="dropdown-column">
+      <a href="bio-eggmin.html">Bio-Eggmin</a>
+      <a href="bio-mitraz.html">Bio-Mitraz</a>
+      <a href="calcitron.html">Calcitron Advance</a>
+      <a href="gut-o-clix.html">Gut-O-Clix</a>
+      <a href="toxyclix-plus.html">Toxyclix-Plus</a>
+      <a href="biorid-pfs.html">Biorid-PFS</a>
+      <a href="bio-vital.html">Bio-Vital</a>
+    </div>
+    <div class="dropdown-column">
+      <a href="bio-zigtox.html">Bio-Zigtox</a>
+      <a href="bio-vit-e.html">Bio VIT E</a>
+      <a href="bio-tymogard.html">Bio Tymogard</a>
+      <a href="bio-vit-a.html">Bio VIT A</a>
+      <a href="bio-tylon-10.html">Bio TYLON 10</a>
+      <a href="bio-pro-up.html">BIO Pro UP</a>
+      <a href="bio-fe-puls.html">Bio Fe Puls</a>
+    </div>
+  </div>
+</li>
+
+<style>
+/* Prevent bullet on list item */
+.dropdown {
+  position: relative;
+  list-style: none;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  width: 500px;
+  padding: 20px;
+  display: none;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dropdown-column {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-column a {
+  padding: 8px 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.dropdown-column a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Desktop hover */
+@media (min-width: 769px) {
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+}
+
+/* Mobile click */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    padding: 10px 0;
+    flex-direction: column;
+  }
+
+  .dropdown-column {
+    width: 100%;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: flex;
+  }
+}
+</style>
+
+<script>
+function toggleDropdown(e) {
+  e.preventDefault();
+  // Close other dropdowns
+  document.querySelectorAll('.dropdown').forEach(el => {
+    if (el !== e.target.parentElement) {
+      el.classList.remove('active');
+    }
+  });
+  // Toggle current
+  e.target.parentElement.classList.toggle('active');
+}
+</script>
+        </div>
+      </div>
+
+      <a href="./contact.html">Contact Us</a>
+    </nav>
+  </div>
+</header>
+      <!-- HEADER END -->
+
+      <!-- CONTENT START -->
+      <div class="page-content">
+        <!-- INNER PAGE BANNER -->
+        <div
+          class="wt-bnr-inr overlay-wraper bg-center"
+          style="background-image: url(images/banner/bio-eggmin-bg.jpg)"
+        >
+          <div class="overlay-main site-bg-secondry opacity-07"></div>
+          <div class="container">
+            <div class="wt-bnr-inr-entry">
+              <div class="banner-title-outer">
+                <div class="banner-title-name">
+                  <h2 class="site-text-primary"  style="color: white;">BIO TYLON </h2>
+                </div>
+              </div>
+              <!-- BREADCRUMB ROW -->
+
+              <div>
+                <ul class="wt-breadcrumb breadcrumb-style-2">
+                  <li><a href="index.html">Home</a></li>
+                  <li>BIO TYLON </li>
+                </ul>
+              </div>
+
+              <!-- BREADCRUMB ROW END -->
+            </div>
+          </div>
+        </div>
+        <!-- INNER PAGE BANNER END -->
+        <!-- SECTION CONTENT START -->
+        <div class="section-full p-t80 p-b80">
+          <!-- PRODUCT DETAILS -->
+          <div class="container woo-entry">
+            <div class="row m-b30">
+              <div class="col-lg-3 col-md-4 m-b30">
+                <div class="wt-box wt-product-gallery on-show-slider">
+                  <div
+                    id="sync1"
+                    class="owl-carousel owl-theme owl-btn-vertical-center m-b5"
+                  >
+                    <!-- <div class="item">
+                      <div class="mfp-gallery">
+                        <div class="wt-box">
+                          <div class="wt-thum-bx wt-img-overlay1">
+                            <img src="images/products/bio-eggmin.jpg" alt="" />
+                            <div class="overlay-bx">
+                              <div class="overlay-icon">
+                                <a
+                                  class="mfp-link"
+                                  href="images/products/bio-eggmin.jpg"
+                                >
+                                  <i
+                                    class="fa fa-arrows-alt wt-icon-box-xs"
+                                  ></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                    <!-- <div class="item">
+                      <div class="mfp-gallery">
+                        <div class="wt-box">
+                          <div class="wt-thum-bx wt-img-overlay1">
+                            <img src="images/products/bio-eggmin1.jpg" alt="" />
+                            <div class="overlay-bx">
+                              <div class="overlay-icon">
+                                <a
+                                  class="mfp-link"
+                                  href="images/products/bio-eggmin1.jpg"
+                                >
+                                  <i
+                                    class="fa fa-arrows-alt wt-icon-box-xs"
+                                  ></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                  <!-- <div id="sync2" class="owl-carousel owl-theme d-none">
+                    <div class="item">
+                      <div class="wt-media">
+                        <img src="images/products/bio-eggmin.jpg" alt="" />
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="wt-media">
+                        <img src="images/products/bio-eggmin1.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+
+              <!-- <div class="col-lg-9 col-md-8">
+                <div class="product-detail-info bg-gray p-a30">
+                  <div class="wt-product-title">
+                    <h2 class="post-title">
+                      <a href="javascript:void(0);">BIO
+TYLON 10%</a>
+                    </h2>
+                  </div>
+                  <div class="wt-product-text">
+                    <p>
+                     The Superior Performer Enhancer
+                    </p>
+                    <p>
+                      <b>Bio Tylon 10% (Tylosin Phosphate 10%)</b>   is a powerful feed additive used to
+prevent and control Chronic Respiratory Disease in poultry caused by
+Mycoplasma Gallisepticum and Mycoplasma Synoviae. It ensures better
+productivity, hatchability, and overall flock health.
+                    </p>
+                  </div>
+                </div>
+              </div> -->
+              <div style="width: 100%;">
+  <div class="product-detail-info bg-gray p-a30">
+    <div class="wt-product-title">
+      <h2 class="post-title">
+        <a href="javascript:void(0);"> BIO
+TYLON 10%</a>
+      </h2>
+    </div>
+    <div class="wt-product-text">
+      <p>
+        The Superior Performer Enhancer
+      </p>
+      <p>
+        <b> Bio Tylon 10% (Tylosin Phosphate 10%)</b> is a powerful feed additive used to
+prevent and control Chronic Respiratory Disease in poultry caused by
+Mycoplasma Gallisepticum and Mycoplasma Synoviae. It ensures better
+productivity, hatchability, and overall flock health.
+      </p>
+    </div>
+  </div>
+</div>
+
+            </div>
+
+            <!-- TABS CONTENT START -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="wt-tabs border bg-tabs">
+                  <ul class="nav nav-tabs">
+                    <li>
+                      <a data-toggle="tab" href="#web-design-19" class="active"  style="color: white;"
+                        >BENEFITS</a
+                      >
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#graphic-design-19"  style="color: white;"
+                        >COMPOSITION</a
+                      >
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#developement-19"  style="color: white;">DOSAGE</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div id="web-design-19" class="tab-pane active">
+                      <div class="p-a10">
+                        <ul class="site-list-style-two m-b0">
+                          <li>
+                          Controls microbial load effectively
+                          </li>
+                          <li>
+                          Compatible with feed supplements
+(including Salinomycin)
+                          </li>
+                          <li>No resistance, no residual effect</li>
+                          <li>Dose flexibility with high safety margin.</li>
+                          <li>Improves egg production, quality &
+feed efficiency</li>
+<li>Enhances hatchability and chick quality</li>
+<li>Performance boost at low
+concentration</li>
+<li>Complete absorption & bioavailability</li>
+                          <!-- <li>
+                            Provides the essential micro mineral
+                            supplementation.
+                          </li>
+                          <li>
+                            Minerals in highly bio available form thus ensuring
+                            maximum assimilation.
+                          </li>
+                          <li>
+                            Improves egg quality in layers & breeders, meat
+                            quality and processing yields in broilers.
+                          </li> -->
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="graphic-design-19" class="tab-pane">
+<div class="container py-4">
+  <div class="row g-4">
+
+    <!-- Subclinical Impact Card -->
+    <div class="col-md-6">
+      <div class="card p-3 h-100">
+        <div class="card-title-custom">Subclinical Impact</div>
+        <ul class="mb-0">
+          <li>Reduces FCR</li>
+          <li>Prevents egg drop due to reproductive damage</li>
+          <li>Improves chick quality & weight gain</li>
+          <li>Minimizes economic losses</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Clinical Impact Card -->
+    <div class="col-md-6">
+      <div class="card p-3 h-100">
+        <div class="card-title-custom">Clinical Impact</div>
+        <ul class="mb-0">
+          <li>Controls high mortality & morbidity</li>
+          <li>Reduces total subclinical damage</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                      <!-- <table
+                        class="table m-b0 table-striped col-lg-6 col-md-6 col-sm-12"
+                      >
+                        <tr>
+                          <td><b>Amla </b></td>
+                          <td>25 mg</td>
+                        </tr>
+                        <tr>
+                          <td><b>Arjuna </b></td>
+                          <td>17.5 mg</td>
+                        </tr>
+                        <tr>
+                          <td><b>Arni </b></td>
+                          <td>25 mg</td>
+                        </tr>
+                        <tr>
+                          <td><b>Bhringraj </b></td>
+                          <td>375 mg</td>
+                        </tr>
+                        <tr>
+                          <td><b>Bhulamla</b></td>
+                          <td>375 mg</td>
+                        </tr>
+                        <tr>
+                          <td><b>Biranjasi </b></td>
+                          <td>10 mg</td>
+                        </tr>
+                        <tr>
+                          <td><b>Chitrak </b></td>
+                          <td>75 mg</td>
+                        </tr>
+                        <tr>
+                          <td><b>Daruharidra </b></td>
+                          <td>100 mg</td>
+                        </tr>
+                        <tr>
+                          <td><b>Gokhru </b></td>
+                          <td>35 mg</td>
+                        </tr>
+                        <tr>
+                          <td><b>Guduch </b></td>
+                          <td>150 mg</td>
+                        </tr>
+                        <tr>
+                          <td><b>Haritak </b></td>
+                          <td>75 mg</td>
+                        </tr>
+                        <tr>
+                          <td><b>Jhau </b></td>
+                          <td>100 mg</td>
+                        </tr>
+                        <tr>
+                          <td><b>Daruharidra </b></td>
+                          <td>100 mg</td>
+                        </tr>
+                      </table> -->
+                    </div>
+                    <div id="developement-19" class="tab-pane">
+                      <div class="wt-product-text">
+                        <p>
+                          <b>Layers:</b> 500 ppm (500 gm/ton) from point of lay to 42nd week
+                        </p>
+                        <p><b>Commercial Broilers:</b> 200 gm/ton from
+day 1 to 42nd day</p>
+                        <!-- <p><b>Breeder:</b> 20–25 ml / 100 birds.</p>
+                        <p>(Or as directed by a vet/poultry consultant)</p> -->
+                        <!-- <p>
+                          <b>As a performance booster:</b> Add 250g per ton of
+                          feed (as top dressing)
+                        </p> -->
+                        <!-- <p>
+                          Dosage needs to be tailored based on the feed
+                          formulation/ flock specific requirement on the advise
+                          of a poultry nutritionist
+                        </p> -->
+                        <!-- <p><b>PRESENTATION:</b></p>
+                        <p>Powder: 5 kg</p> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- TABS CONTENT START -->
+          </div>
+          <!-- PRODUCT DETAILS -->
+        </div>
+        <!-- CONTENT CONTENT END -->
+
+        <!-- SECTION CONTENT START -->
+        <div class="section-full p-t80 p-b50 bg-gray">
+          <div class="container">
+            <div class="section-content">
+              <!-- TITLE START -->
+              <div class="wt-separator-two-part">
+                <div class="row wt-separator-two-part-row">
+                  <div class="col-lg-8 col-md-6 wt-separator-two-part-left">
+                    <!-- TITLE START-->
+                    <div class="section-head left wt-small-separator-outer">
+                      <div class="wt-small-separator site-text-primary">
+                        <div class="sep-leaf-left"></div>
+                        <div>Our Best Products</div>
+                        <div class="sep-leaf-right"></div>
+                      </div>
+                      <h2>Featured products</h2>
+                    </div>
+                    <!-- TITLE END-->
+                  </div>
+                  <div
+                    class="col-lg-4 col-md-6 wt-separator-two-part-right text-right"
+                  >
+                    <a href="contact.html" class="site-button site-btn-effect"
+                      >Contact us</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- TITLE END -->
+
+              <div
+                class="owl-carousel featured-products owl-btn-vertical-center"
+              >
+                <!-- COLUMNS 1 -->
+                <div class="item">
+                  <div class="wt-box wt-product-box overflow-hide">
+                    <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
+                      <img src="images/products/bio-eggmin.jpg" alt="" />
+                    </div>
+                    <div class="wt-info text-center">
+                      <div class="p-a20 bg-white">
+                        <h3 class="wt-title">
+                          <a href="bio-eggmin.html">Bio-Eggmin</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- COLUMNS 2 -->
+                <div class="item">
+                  <div class="wt-box wt-product-box overflow-hide">
+                    <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
+                      <img src="images/products/bio-mitraz.jpg" alt="" />
+                    </div>
+                    <div class="wt-info text-center">
+                      <div class="p-a20 bg-white">
+                        <h3 class="wt-title">
+                          <a href="bio-mitraz.html">Bio-Mitraz</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- COLUMNS 3 -->
+                <div class="item">
+                  <div class="wt-box wt-product-box overflow-hide">
+                    <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
+                      <img src="images/products/calcitron.jpg" alt="" />
+                    </div>
+                    <div class="wt-info text-center">
+                      <div class="p-a20 bg-white">
+                        <h3 class="wt-title">
+                          <a href="calcitron.html">Calcitron Advance</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- COLUMNS 4 -->
+                <div class="item">
+                  <div class="wt-box wt-product-box overflow-hide">
+                    <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
+                      <img src="images/products/gut-O-clix.jpg" alt="" />
+                    </div>
+                    <div class="wt-info text-center">
+                      <div class="p-a20 bg-white">
+                        <h3 class="wt-title">
+                          <a href="gut-O-clix.html">Gut-O-Clix</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- COLUMNS 5 -->
+                <div class="item">
+                  <div class="wt-box wt-product-box overflow-hide">
+                    <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
+                      <img src="images/products/toxyclix-plus.jpg" alt="" />
+                    </div>
+                    <div class="wt-info text-center">
+                      <div class="p-a20 bg-white">
+                        <h3 class="wt-title">
+                          <a href="toxyclix-plus.html">Toxyclix-Plus</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- COLUMNS 5 -->
+                <div class="item">
+                  <div class="wt-box wt-product-box overflow-hide">
+                    <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
+                      <img src="images/products/biorid-pfs.jpg" alt="" />
+                    </div>
+                    <div class="wt-info text-center">
+                      <div class="p-a20 bg-white">
+                        <h3 class="wt-title">
+                          <a href="biorid-pfs.html">Biorid Pfs</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- COLUMNS 5 -->
+                <div class="item">
+                  <div class="wt-box wt-product-box overflow-hide">
+                    <div class="wt-thum-bx wt-img-overlay1 wt-img-effect zoom">
+                      <img src="images/products/bio-vital.jpg" alt="" />
+                    </div>
+                    <div class="wt-info text-center">
+                      <div class="p-a20 bg-white">
+                        <h3 class="wt-title">
+                          <a href="bio-vital.html">Bio Vital</a>
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SECTION CONTENT END -->
+      </div>
+      <!-- CONTENT END -->
+
+      <!-- FOOTER START -->
+      <footer class="footer-section">
+  <div class="footer-container">
+    
+    <!-- Left column -->
+    <div class="footer-col logo-col">
+      <img src="./logo.png" alt="Bioclix Logo" class="footer-logo" style="filter: brightness(0) invert(1);" />
+
+      <p style="font-size:16px;">89/2, Takshashila Habitat,<br>
+         Sardar Patel Ring Road,<br>
+         Ahmedabad, Gujarat-382415</p>
+      <p style="font-size:16px;" class="phone">+91-9871863743</p>
+    </div>
+
+    <!-- Useful Links -->
+    <div class="footer-col">
+      <h4 style="color: #ffffff;">Useful Links</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">View Catalog</a></li>
+      </ul>
+    </div>
+
+    <!-- Products Column 1 -->
+    <div class="footer-col">
+      <h4 style="color: #ffffff;">Our Products</h4>
+      <ul>
+        <li><a href="#">Bio-Eggmin</a></li>
+        <li><a href="#">Biorid-PFS</a></li>
+        <li><a href="#">Gut-O-Clix</a></li>
+        <li><a href="#">Bio-Vital</a></li>
+      </ul>
+    </div>
+
+    <!-- Products Column 2 -->
+    <div class="footer-col">
+      <h4 style="color: #ffffff;">Our Products</h4>
+      <ul>
+        <li><a href="#">Bio Tymogard 10%</a></li>
+        <li><a href="#">Bio Tylon 10%</a></li>
+        <li><a href="#">Bio Vit-A</a></li>
+        <li><a href="#">Bio Vit-E</a></li>
+      </ul>
+    </div>
+
+    <!-- Products Column 3 -->
+    <div class="footer-col">
+      <h4 style="color: #ffffff;">Our Products</h4>
+      <ul>
+        <li><a href="#">Bio FE Plus</a></li>
+        <li><a href="#">Bio Pro-UP</a></li>
+        <li><a href="#">EL-VIT X</a></li>
+        <li><a href="#">Bio Zigtop-P</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+      <!-- FOOTER END -->
+      <!-- BUTTON TOP START -->
+      <button class="scroltop">
+        <span class="fa fa-angle-up relative" id="btn-vibrate"></span>
+      </button>
+    </div>
+
+    <!-- JAVASCRIPT  FILES ========================================= -->
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <!-- JQUERY.MIN JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- POPPER.MIN JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- BOOTSTRAP.MIN JS -->
+    <script src="js/bootstrap-select.min.js"></script>
+    <!-- Form js -->
+    <script src="js/magnific-popup.min.js"></script>
+    <!-- MAGNIFIC-POPUP JS -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- WAYPOINTS JS -->
+    <script src="js/counterup.min.js"></script>
+    <!-- COUNTERUP JS -->
+    <script src="js/waypoints-sticky.min.js"></script>
+    <!-- STICKY HEADER -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- MASONRY  -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- OWL  SLIDER  -->
+    <script src="js/stellar.min.js"></script>
+    <!-- PARALLAX BG IMAGE   -->
+    <script src="js/theia-sticky-sidebar.js"></script>
+    <!-- STICKY SIDEBAR  -->
+    <script src="js/jquery.bootstrap-touchspin.js"></script>
+    <!-- FORM JS -->
+    <script src="js/custom.js"></script>
+    <!-- CUSTOM FUCTIONS  -->
+
+    <script src="js/switcher.js"></script>
+    <!-- SHORTCODE FUCTIONS  -->
+
+    <!-- STYLE SWITCHER  ======= -->
+    <div class="styleswitcher">
+      <div class="styleswitcher-inner">
+        <h6 class="switcher-title">Color Skin</h6>
+        <ul class="color-skins">
+          <li>
+            <a
+              class="theme-skin skin-1"
+              href="contact-1a39b.html?theme=css/skin/skin-1"
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- STYLE SWITCHER END ==== -->
+    <!-- <a href="https://wa.me/+919896017485?text=I'm%20interested%20in%20your" target="_blank" id="whatsapp">
+        <i class="icon fa fa-whatsapp"></i>
+    </a> -->
+
+    <script>
+      $(document).ready(function () {
+        var sync1 = $("#sync1");
+        var sync2 = $("#sync2");
+        var slidesPerPage = 4; //globaly define number of elements per page
+        var syncedSecondary = true;
+
+        sync1
+          .owlCarousel({
+            items: 1,
+            slideSpeed: 2000,
+            nav: true,
+            autoplay: false,
+            dots: false,
+            loop: true,
+            responsiveRefreshRate: 200,
+            navText: [
+              '<i class="fa fa-chevron-left"></i>',
+              '<i class="fa fa-chevron-right"></i>',
+            ],
+          })
+          .on("changed.owl.carousel", syncPosition);
+
+        sync2
+          .on("initialized.owl.carousel", function () {
+            sync2.find(".owl-item").eq(0).addClass("current");
+          })
+          .owlCarousel({
+            items: slidesPerPage,
+            dots: false,
+            nav: false,
+            margin: 5,
+            smartSpeed: 200,
+            slideSpeed: 500,
+            slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+            responsiveRefreshRate: 100,
+          })
+          .on("changed.owl.carousel", syncPosition2);
+
+        function syncPosition(el) {
+          //if you set loop to false, you have to restore this next line
+          //var current = el.item.index;
+
+          //if you disable loop you have to comment this block
+          var count = el.item.count - 1;
+          var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
+
+          if (current < 0) {
+            current = count;
+          }
+          if (current > count) {
+            current = 0;
+          }
+
+          //end block
+
+          sync2
+            .find(".owl-item")
+            .removeClass("current")
+            .eq(current)
+            .addClass("current");
+          var onscreen = sync2.find(".owl-item.active").length - 1;
+          var start = sync2.find(".owl-item.active").first().index();
+          var end = sync2.find(".owl-item.active").last().index();
+
+          if (current > end) {
+            sync2.data("owl.carousel").to(current, 100, true);
+          }
+          if (current < start) {
+            sync2.data("owl.carousel").to(current - onscreen, 100, true);
+          }
+        }
+
+        function syncPosition2(el) {
+          if (syncedSecondary) {
+            var number = el.item.index;
+            sync1.data("owl.carousel").to(number, 100, true);
+          }
+        }
+
+        sync2.on("click", ".owl-item", function (e) {
+          e.preventDefault();
+          var number = $(this).index();
+          sync1.data("owl.carousel").to(number, 300, true);
+        });
+      });
+    </script>
+  </body>
+</html>
