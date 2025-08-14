@@ -37,7 +37,8 @@ a {
 }
 
 .logo img {
-        width: 305px;
+        width: 260px;
+        object-fit: contain;
     height: 445px;
 }
 

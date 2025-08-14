@@ -572,350 +572,17 @@ function toggleDropdown(e) {
 
 
 <!-- Our Products Section -->
- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-<style>
-body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-}
-
-.swiper {
-  width: 100%;
-  padding: 30px 0;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-}
-
-.product-card {
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  padding-bottom: 20px;
-  transition: transform 0.3s ease;
-  width: 100%;
-  max-width: 300px;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-}
-
-.product-card img {
-  width: 100%;
-  height: auto;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-.product-card h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-.product-card h4 {
-  font-size: 14px;
-  color: #555;
-  margin-top: 5px;
-}
-
-.product-card p {
-  font-size: 13px;
-  color: #777;
-  margin: 10px 0;
-  padding: 0 10px;
-}
-
-.plus-icon {
-  display: inline-block;
-  background: black;
-  color: white;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
-  font-size: 18px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: black;
-}
-</style>
-
-<div class="swiper mySwiper">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <div class="product-card">
-         <a href="bio-eggmin.html"><img src="Bio Eggmin_page-0001.jpg" alt="Bio-Eggmin"></a>
-         <a href="bio-eggmin.html"><h3>Bio-Eggmin</h3></a>
-         <a href="bio-eggmin.html"><p>Bio-Eggmin is a cost-effective and complete blend of highly-bioavailable organic trace minerals, to improve the performance</p></a>
-        <a href="bio-eggmin.html"><span class="plus-icon">+</span></a>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="product-card">
-         <a href="bio-pro-up.html"><img src="Bio Pro-Up_page-0001.jpg" alt="Bio-Vital"></a>
-         <a href="bio-pro-up.html"><h3>Bio Pro-Up</h3></a>
-         <a href="bio-pro-up.html"><p>BIO PRO-UPBio Pro-UP is a natural feed additive designed to increase egg production in laying birds.</p></a>
-       <a href="bio-pro-up.html"><span class="plus-icon">+</span></a>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="product-card">
-         <a href="bio-tylon-10.html"><img src="BIO TYLON 10_page-0001.jpg" alt="Gut-O-Clix"></a>
-         <a href="bio-tylon-10.html"><h3>Bio Tylon 10%</h3></a>
-         <a href="bio-tylon-10.html"><p>Bio Tylon 10% is a powerful feed additive used to prevent and control Chronic Respiratory Disease in poultry</p></a>
-        <a href="bio-tylon-10.html"><span class="plus-icon">+</span></a>
-      </div>
-    </div>
-     <div class="swiper-slide">
-      <div class="product-card">
-        <a href="bio-tymogard.html"><img src="Bio Tymogaurd 10_page-0001.jpg" alt="Bio-Vital"></a>
-        <a href="bio-tymogard.html"><h3>BIO TYMOGARD 10%</h3></a>
-        <a href="bio-tymogard.html"><p>BIO TYMOGARD 10% is a Tiamulin-based antibiotic premix for effective prevention and control of Mycoplasma infections in poultry.</p></a>
-        <a href="bio-tymogard.html"><span class="plus-icon">+</span></a>
-      </div>
-    </div>
-     <div class="swiper-slide">
-      <div class="product-card">
-        <a href="bio-vit-a.html"><img src="Bio Vit - A_page-0001.jpg" alt="Bio-Vital"></a>
-        <a href="bio-vit-a.html"><h3>Bio Vit-A</h3></a>
-        <a href="bio-vit-a.html"><p>Bio Vit-ABio Vit-A is an essential liquid supplement that provides Vitamin A for chicks and adult birds to promote healthy growth</p></a>
-       <a href="bio-vit-a.html"><span class="plus-icon">+</span></a>
-      </div>
-    </div>
-     <div class="swiper-slide">
-      <div class="product-card">
-        <a href="bio-vit-e.html"><img src="Bio Vit - E_page-0001.jpg" alt="Bio-Vital"></a>
-        <a href="bio-vit-e.html"><h3>Bio Vit-E</h3></a>
-        <a href="bio-vit-e.html"><p>Bio Vit-E is a liquid and powder feed supplement designed to enhance immunity, fertility, egg quality</p></a>
-       <a href="bio-vit-e.html"><span class="plus-icon">+</span></a>
-      </div>
-    </div>
-     <div class="swiper-slide">
-      <div class="product-card">
-        <a href="bio-vital.html"><img src="Bio Vital_page-0001.jpg" alt="Bio-Vital"></a>
-        <a href="bio-vital.html"><h3>Bio-Vital</h3></a>
-        <a href="bio-vital.html"><p>Bio-Vital is a unique nutritional solution formulated to<br> support underweight birds.</p></a>
-       <a href="bio-vital.html"><span class="plus-icon">+</span></a>
-      </div>
-    </div>
-     <div class="swiper-slide">
-      <div class="product-card">
-         <a href="bio-zigtox.html"><img src="Bio Zigtox -P_page-0001.jpg" alt="Bio-Vital"></a>
-         <a href="bio-zigtox.html"><h3>Bio Zigtox-P</h3></a>
-         <a href="bio-zigtox.html"><p>Bio Zigtox-P is a powerful herbal liver tonic designed to protect the liver from toxic damage and improve its overall efficiency</p></a>
-       <a href="bio-zigtox.html"><span class="plus-icon">+</span></a>
-      </div>
-    </div>
-     <div class="swiper-slide">
-      <div class="product-card">
-        <a href="bio-fe-puls.html"><img src="biofeplus.jpg" alt="Bio-Eggmin"></a>
-        <a href="bio-fe-puls.html"><h3>BIO fe PLUS</h3></a>
-        <a href="bio-fe-puls.html"><p>BIO fe PLUS is a revolutionary hematinic iron tonic and supplement which helps in removing the vitamin deficiency</p></a>
-       <a href="bio-fe-puls.html"><span class="plus-icon">+</span></a>
-      </div>
-    </div>
-     <div class="swiper-slide">
-      <div class="product-card">
-        <a href="biorid-pfs.html"><img src="Biorid PFS_page-0001.jpg" alt="Bio-Eggmin"></a>
-        <a href="biorid-pfs.html"><h3>Blorid-PFS </h3></a>
-        <a href="biorid-pfs.html"><p>Blorid-PFS feed supplement helps to maintain a disease free State, delays the ageing process, maintain the growth.</p></a>
-     <a href="biorid-pfs.html"><span class="plus-icon">+</span></a>
-      </div>
-    </div>
-     <div class="swiper-slide">
-      <div class="product-card">
-        <a href="calcitron.html"><img src="Calcitron Advance_page-0001.jpg" alt="Bio-Eggmin"></a>
-        <a href="calcitron.html"><h3>Calcltron Advance</h3></a>
-        <a href="calcitron.html"><p>Calcltron Advance is a specialty combination of calcium and trace minerals fortified with Vitamin D, to improve egg shell quality.</p></a>
-       <a href="calcitron.html"><span class="plus-icon">+</span></a>
-      </div>
-    </div>
-     <div class="swiper-slide">
-      <div class="product-card">
-         <a href="gut-o-clix.html"><img src="Gut -O- Clix_page-0001.jpg" alt="Bio-Eggmin"></a>
-         <a href="gut-o-clix.html"><h3>Gut-o-Clix </h3></a>
-         <a href="gut-o-clix.html"><p>Gut-o-Clix ensures hygiene by reduction of pathogen load and controls the pH of feed and drinking water of birds.</p></a>
-       <a href="gut-o-clix.html"><span class="plus-icon">+</span></a>
-      </div>
-    </div>
-    </div>
-    <!-- Add more slides -->
-  </div>
-
-  <!-- Navigation -->
-  <!-- <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div> -->
-</div>
-
-<script>
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-  spaceBetween: 20,
-  loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    1024: { slidesPerView: 4 },
-    768: { slidesPerView: 2 },
-    0: { slidesPerView: 1 } // Mobile fix
-  }
-});
-</script>
-
-
-<!-- Swiper CSS -->
-<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-<style>
-body {
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-}
-
-.swiper {
-  width: 100%;
-  padding: 30px 0;
-}
-
-.product-card {
-  background: white;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  padding-bottom: 20px;
-  transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-  transform: translateY(-5px);
-}
-
-.product-card img {
-  width: 100%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-
-.product-card h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-.product-card h4 {
-  font-size: 14px;
-  color: #555;
-  margin-top: 5px;
-}
-
-.product-card p {
-  font-size: 13px;
-  color: #777;
-  margin: 10px 0;
-  padding: 0 10px;
-}
-
-.plus-icon {
-  display: inline-block;
-  background: black;
-  color: white;
-  border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
-  font-size: 18px;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: black;
-}
-</style>
-</head>
-<body> -->
-
-<!-- Slider -->
-<!-- <div class="swiper mySwiper">
-  <div class="swiper-wrapper"> -->
-    <!-- 8 slides -->
-   
-    <!-- <div class="swiper-slide">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x200" alt="Bio-Vital">
-        <h3>Bio-Vital</h3>
-        <h4>Immunity Booster</h4>
-        <p>Improves strength and vitality.</p>
-        <span class="plus-icon">+</span>
-      </div>
-    </div> -->
-    
-    <!-- Repeat until 8 slides -->
-    <!-- <div class="swiper-slide"><div class="product-card"><img src="images/products/bio-eggmin.jpg"><h3>Bio-eggmin</h3><p>Proteinated Organic Micro Minerals Supplementation for Poultry.</p><span class="plus-icon">+</span></div></div>
-    <div class="swiper-slide"><div class="product-card"><img src="images/products/bio-mitraz.jpg"><h3>Bio-mitraz</h3><p>Control and treatment of ectoparasites like lice, ticks & mites.</p><span class="plus-icon">+</span></div></div>
-    <div class="swiper-slide"><div class="product-card"><img src="images/products/bio-vital.jpg"><h3>Bio-vital</h3><p>Bio-Vital is a unique nutritional solution formulated to support underweight birds.</p><span class="plus-icon">+</span></div></div>
-    <div class="swiper-slide"><div class="product-card"><img src="images/products/biorid-pfs.jpg"><h3>Biorid-pfs</h3><p>Through Research it has been proven that Biorid-PFS can very effectively reduce the viral load in bird.</p><span class="plus-icon">+</span></div></div>
-    <div class="swiper-slide"><div class="product-card"><img src="images/products/calcitron.jpg"><h3>Calcitron Advance</h3><p>Nutritional Liquid Feed Supplement For Use In Poultry</p><span class="plus-icon">+</span></div></div>
-    <div class="swiper-slide"><div class="product-card"><img src="images/products/gut-O-clix.jpg"><h3>Gut-O-clix</h3><p>Food Grade Organic acid used as Acidifier, Detoxifier & Mould Inhibitor.</p><span class="plus-icon">+</span></div></div>
-    <div class="swiper-slide"><div class="product-card"><img src="images/products/toxyclix-plus.jpg"><h3>Toxyclbx-Plus</h3><p>Toxyclbx-Plus is unique combination of bufered organic acids, MOS, BHA and activated charcoal.</p><span class="plus-icon">+</span></div></div>
-  </div> -->
-
-  <!-- Navigation -->
-  <!-- <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div> -->
-
-<!-- Swiper JS -->
-<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
-  spaceBetween: 20,
-  loop: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    1024: { slidesPerView: 4 },
-    768: { slidesPerView: 2 },
-    480: { slidesPerView: 1 }
-  }
-});
-</script>
-
-</body>
-</html> -->
-
-<!-- <section class="products-section">
+<section class="products-section">
   <div class="container">
     <h2 class="section-heading">Our Products</h2>
     <p class="section-desc">
       At Bioclix Pharma, we offer a wide range of high-quality, affordable pharmaceutical products formulated to support better health and wellness. From multivitamins and pain relievers to digestive and energy-boosting solutions, our products are developed under strict quality standards to ensure safety and efficacy for patients across all age groups.
     </p>
 
-   <div class="product-cards"> -->
+   <div class="product-cards">
 
     <!-- Card 1 -->
-    <!-- <div class="product-card">
+    <div class="product-card">
       <img src="./images/b1.jpg" alt="Bio Eggmin" class="product-img">
       <div class="product-content">
         <div class="product-info">
@@ -925,10 +592,10 @@ var swiper = new Swiper(".mySwiper", {
         </div>
         <button class="plus-btn">+</button>
       </div>
-    </div> -->
+    </div>
 
     <!-- Card 2 -->
-    <!-- <div class="product-card">
+    <div class="product-card">
       <img src="./images/b2.jpg" alt="Bio Eggmin" class="product-img">
       <div class="product-content">
         <div class="product-info">
@@ -938,10 +605,10 @@ var swiper = new Swiper(".mySwiper", {
         </div>
         <button class="plus-btn">+</button>
       </div>
-    </div> -->
+    </div>
 
     <!-- Card 3 -->
-    <!-- <div class="product-card">
+    <div class="product-card">
       <img src="./images/b3.jpg" alt="Bio Eggmin" class="product-img">
       <div class="product-content">
         <div class="product-info">
@@ -955,10 +622,10 @@ var swiper = new Swiper(".mySwiper", {
 
   </div>
   </div>
-</section> -->
+</section>
 
 
-<!-- <style>
+<style>
     .submit-btn {
   background-color: white;
   color: #2e8b57;
@@ -1006,7 +673,7 @@ var swiper = new Swiper(".mySwiper", {
     transform: scale(1.1);
   }
 }
-</style> -->
+</style>
 
 
 
